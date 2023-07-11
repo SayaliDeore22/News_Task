@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>Search Results for "{{ keyword }}"</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date Published</th>
+            <th>Source</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for article in articles %}
+        <tr>
+            <td><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></td>
+            <td>{{ article.publishedAt }}</td>
+            <td>{{ article.source.name }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
