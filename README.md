@@ -2,6 +2,7 @@
 Build a customer facing web based application where a user can search for news articles from around the world based on the entered keyword. 
 Also create a web portal for them to view results of their previous searches.
 API: News API – Free JSON API for Live News and Blog Articles
+api_key = 'dc5aabde798c4cd38695cdc085ba9a7a'
 
 Features: 
 Page to search for a particular phrase or keyword. Store the results locally.
